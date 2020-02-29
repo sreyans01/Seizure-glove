@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ECF8B4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fragment_replacer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutcircle"
+        android:padding="8dp"
+        android:fitsSystemWindows="true"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circleimageview">
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ambulance_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_ambulance_24dp"
+        android:text="Call Ambulance"
+        android:background="@drawable/circle"
+        android:backgroundTint="#9717E6"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="start|center" />
+
+    <Button
+        android:id="@+id/firstaid_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_cross_symbol_foreground"
+        android:text="First Aid\n Instructions"
+        android:backgroundTint="#9717E6"
+        android:textStyle="bold"
+        android:background="@drawable/circle"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="bottom|center" />
+
+    <Button
+        android:id="@+id/notifications_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_notifications_active_blue_24dp"
+        android:text="Set Alert On/Off"
+        android:background="@drawable/circle"
+        android:backgroundTint="#9717E6"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="top|center" />
+
+    <Button
+        android:id="@+id/patienthistory_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_patient_history_24dp"
+        android:text="Patient History"
+        android:backgroundTint="#9717E6"
+        android:textStyle="bold"
+        android:background="@drawable/circle"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="end|center" />
+
+    <ImageView
+        android:id="@+id/symbol_iitism"
+        android:alpha="0.5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ViewFlipper
+        android:id="@+id/introviewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:src="@color/design_default_color_primary_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:src="@drawable/gradient_fire"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:src="@color/LightBlue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:src="@drawable/mylogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_alignBottom="@id/introviewflipper"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/showPrevious"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:onClick="showPreviousView2"
+        android:text="Previous"
+        android:textSize="16sp"
+        android:drawablePadding="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/buttonshape2"
+        android:drawableStart="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    <Button
+        android:id="@+id/showNext"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="showNextView2"
+        android:gravity="left"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:drawableEnd="@drawable/ic_right_arrow_black"
+        android:background="@drawable/buttonshape2"
+        android:text="Next"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PatientHistory.PatientHistory">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="8dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="52.5dp"
+            android:layout_height="52.5dp"
+            android:layout_gravity="start|center"
+            app:cardCornerRadius="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#fff">
+            <ImageView
+                android:id="@+id/dp_profiler"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/patienticon"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:elevation="6dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/batch_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/DefaultTextViewColour6" />
+
+                <TextView
+                    android:id="@+id/patientname"
+                    android:text="Parth Khanna"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="6dp"
+                    android:textAlignment="center"
+                    android:textColor="#0E0B0B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/description"
+                android:padding="8dp"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description : Last Seizure occured on 19-01-2019,10:00 AM"
+                android:background="#fff"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

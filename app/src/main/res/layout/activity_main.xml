@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Seizure Glove"
+        app:titleTextColor="#fff"
+        app:titleMarginStart="150dp"
+        app:subtitle=""
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circularborders_rectangle1"
+        android:backgroundTint="#673AB7"
+        />
+
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fragment_replacer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:background="@drawable/buttonselector"
+            android:backgroundTint="#fff"
+            android:onClick="LogOut"
+            android:text="LOGOUT"
+            />
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/ambulance_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:drawableTop="@drawable/ic_ambulance_24dp"
+        android:text="Hospitals List"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:elevation="6dp"
+        android:shadowColor="#673AB7"
+        android:background="@drawable/circularborders_rectangle1"
+        android:backgroundTint="#fff"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="start|center" />
+
+    <Button
+        android:id="@+id/firstaid_btn"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:drawableTop="@drawable/ic_cross_symbol_foreground"
+        android:text="First Aid\n Instructions"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:elevation="6dp"
+        android:shadowColor="#673AB7"
+        android:background="@drawable/circularborders_rectangle1"
+        android:backgroundTint="#fff"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="bottom|center" />
+
+    <Button
+        android:id="@+id/notifications_btn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:drawableTop="@drawable/ic_notifications_active_blue_24dp"
+        android:text="Set Alert On/Off"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:elevation="6dp"
+        android:shadowColor="#673AB7"
+        android:background="@drawable/circularborders_rectangle1"
+        android:backgroundTint="#fff"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="top|center" />
+
+    <Button
+        android:id="@+id/patienthistory_btn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:drawableTop="@drawable/ic_patient_history_24dp"
+        android:text="Patient History"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:elevation="6dp"
+        android:shadowColor="#673AB7"
+        android:background="@drawable/circularborders_rectangle1"
+        android:backgroundTint="#fff"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="end|center" />
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textStyle="italic|bold"
+            android:text="Sleep without fear when seizure glove is here."
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

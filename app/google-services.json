@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1005383905622",
+    "firebase_url": "https://seizure-detection-glove.firebaseio.com",
+    "project_id": "seizure-detection-glove",
+    "storage_bucket": "seizure-detection-glove.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005383905622:android:383b9ecef026840757e6f7",
+        "android_client_info": {
+          "package_name": "com.sih.seizureglove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005383905622-onvu52qd8ft745oee4il9bdpj540b878.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sih.seizureglove",
+            "certificate_hash": "d748c56c3e5d2095cbc3030012ab15a55008e821"
+          }
+        },
+        {
+          "client_id": "1005383905622-mpfu79rp8ihkssn5jiqdemt13ipootq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpyrOmkVcLdXxeFn5Z_0kOyRP3pC75r3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005383905622-mpfu79rp8ihkssn5jiqdemt13ipootq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

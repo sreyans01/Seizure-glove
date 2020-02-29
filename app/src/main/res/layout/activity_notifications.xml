@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationsActivity">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/edit_Detailslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="20sp"
+            android:text="Patient Name:"/>
+
+        <EditText
+            android:id="@+id/e_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="@drawable/default_edittext_shape"
+            android:hint="Write Patient's Full Name"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="Any Other Details:"/>
+
+            <EditText
+                android:id="@+id/e_extra_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:background="@drawable/default_edittext_shape"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="@color/buttoncolor"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/showPatientDetailslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patient_saved"
+            android:textStyle="italic|bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:text="Patient : "/>
+
+        <TextView
+            android:id="@+id/otherDetails_saved"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="Other Details : "/>
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:drawableRight="@drawable/ic_pencil_black_24dp"
+            android:backgroundTint="@color/buttoncolor"
+            android:layout_gravity="end"/>
+
+
+    </LinearLayout>
+
+
+    <Switch
+        android:text="Start Seizure Alerts"
+        android:switchPadding="8dp"
+        android:layout_gravity="center"
+        android:id="@+id/notify_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Tap on switch to start/stop receiving seizure alerts of the patient."
+        android:textStyle="italic"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/feedbacklayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Share your feedback about the last seizure alert : "
+                android:textColor="@color/DarkBlue"
+                android:padding="12dp"/>
+
+            <RadioGroup
+                android:id="@+id/feedbackgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp">
+
+                <RadioButton
+                    android:id="@+id/positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Yes,it was a seizure." />
+
+                <RadioButton
+                    android:id="@+id/negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="No, it was a false alarm." />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

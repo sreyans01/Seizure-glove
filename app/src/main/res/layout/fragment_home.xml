@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutcircle"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circleimageview"
+        android:fitsSystemWindows="true"
+        android:padding="8dp">
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ambulance_btn"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="start|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5CD65C"
+        android:drawableTop="@drawable/ic_ambulance_24dp"
+        android:text="Call Ambulance"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/firstaid_btn"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5CD65C"
+        android:drawableTop="@drawable/ic_cross_symbol_foreground"
+        android:text="First Aid\n Instructions"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/notifications_btn"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="top|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5CD65C"
+        android:drawableTop="@drawable/ic_notifications_active_blue_24dp"
+        android:text="Set Alert On/Off"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/patienthistory_btn"
+        app:layout_anchor="@+id/relativelayoutcircle"
+        app:layout_anchorGravity="end|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5CD65C"
+        android:drawableTop="@drawable/ic_patient_history_24dp"
+        android:text="Patient History"
+        android:textStyle="bold" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

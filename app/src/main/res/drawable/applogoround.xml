@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tutorx"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#000300"
+        app:cardCornerRadius="150dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:targetApi="n">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginBottom="500dp"
+            android:src="@drawable/mylogo3" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</shape>

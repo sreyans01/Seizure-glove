@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_bankdetails"
+            android:icon="@drawable/ic_account_black_24dp"
+            android:title="Create Test" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_watchads"
+            android:icon="@drawable/dollar_24dpblack"
+            android:title="Watch Interesting Ads" />
+        <item
+            android:id="@+id/nav_Logout_teacher"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:title="Log Out" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star_border_blue_24dp"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_bugreport"
+                android:icon="@drawable/ic_bug_report_blue_24dp"
+                android:title="Bug Report" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Seizure Glove</string>
+
+
+    <string name="APP_ID_OLD">ca-app-pub-3839986854748889~9993538736</string>
+
+    <string name="APP_ID">ca-app-pub-3839986854748889~7154690195</string>
+    <string name="REWARDED_AD1">ca-app-pub-3839986854748889/8739234608</string>
+
+    <string name="BANNER_ID1">ca-app-pub-3839986854748889/7979132377</string>
+    <string name="STUDENTS_INTERSTITIAL_ID">ca-app-pub-3839986854748889/8276200179</string>
+
+    <string name="TEST_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="TEST_BANNER_ID1">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="TEST_STUDENTS_INTERSTITIAL_ID">ca-app-pub-3839986854748889/6461697261</string>
+
+
+    <string name="GooglePlayUrl">https://play.google.com/store/apps/details?id=com.sreyans.tutorx&amp;hl=en_GB</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_teachers_home">Welcome to TutorX</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Send Notifications</string>
+    <string name="title_activity_students">StudentsActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_students2">StudentsActivity2</string>
+    <string name="distance_warning">Please note that the distances shown above are only aerial distances from your profile location.Actual distance by road may vary.</string>
+    <string name="InviteAndEarnMessage2">Refer a friend &amp; we\'ll give you &amp; your buddy upto Rs.50 extra off on your next tuition payment.It will be applicable after a month from referral.</string>
+    <string name="minutesperbatchwarning">Haha,You cannot teach these many minutes a day.Please enter a lower value</string>
+    <string name="releasesoonmsg">Hey folks, we are currently working on this feature and will release it soon.</string>
+    <string name="InviteAndEarnMessage">Help your friend like TutorX helps you. Share the app using the below link.</string>
+    <string name="NewTeacher">Hey, new to TutorX ? Don\'t worry, we have made things very simple for you. Just click on Add Tuition add your first tuition and get started. And yes, don\'t forget to add your first batch so that students can join you straightaway.</string>
+    <string name="fee_structure_msg">For those who do not accept monthly fee, write your fee structure below.</string>
+
+
+    <string-array name="months">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+
+</resources>

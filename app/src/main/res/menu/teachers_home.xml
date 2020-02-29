@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addTuition"
+        android:orderInCategory="100"
+        android:title="ADD tuition"
+        android:icon="@drawable/addcircle_blue"
+        android:checkable="true"
+        app:showAsAction="always|withText" />
+</menu>

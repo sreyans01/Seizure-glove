@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".HospitalsActivity">
+
+
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:background="@drawable/circularborders_rectangle1"
+        android:orientation="vertical"
+        android:backgroundTint="#673AB7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ViewFlipper
+            android:id="@+id/introviewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="650dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:src="@drawable/hospitals1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:src="@drawable/hospitals2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:src="@drawable/hospitals3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:src="@drawable/hospitals4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/image5"
+                android:src="@drawable/hospitals5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image6"
+                android:src="@drawable/hospitals6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image7"
+                android:src="@drawable/hospitals7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </ViewFlipper>
+
+
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                android:background="@drawable/circularborders_rectangle1"
+                android:onClick="showPreviousView"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#673AB7"
+                android:text="Previous"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:drawableRight="@drawable/ic_right_arrow_black"
+                android:background="@drawable/circularborders_rectangle1"
+                android:onClick="showNextView"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#673AB7"
+                android:text="Next"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

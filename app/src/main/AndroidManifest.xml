@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sih.seizureglove">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".PatientHistory.PatientHistory"
+            android:label="Patient History"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".HospitalsActivity"
+            android:label="Hospitals"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <service android:name=".MyIntentService" />
+
+        <activity
+            android:name=".FirstAidActivity"
+            android:label="First Aid Help"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".IntroFragments.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

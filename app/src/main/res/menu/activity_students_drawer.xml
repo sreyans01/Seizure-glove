@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/ic_dp_black"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_mytuitions"
+            android:icon="@drawable/ic_bookstype_blue_24dp"
+            android:title="My Tuitions" />
+        <item
+            android:id="@+id/nav_paymenthistory"
+            android:icon="@drawable/ic_payment_blue_24dp"
+            android:title="Play Brain Games" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:title="Logout"
+            />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Invite and Earn" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star_border_blue_24dp"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_bugreport"
+                android:icon="@drawable/ic_bug_report_blue_24dp"
+                android:title="Report a Bug"
+                />
+
+        </menu>
+    </item>
+
+</menu>
